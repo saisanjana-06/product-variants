@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Variants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-section">
+        <h2>Variants</h2>
+
+        <label class="checkbox-row">
+            <input type="checkbox" id="hasVariants">
+            This product has multiple options, like different sizes or colors
+        </label>
+    </div>
+
+    <div id="variantSection" class="hidden">
+
+        <div class="options-section">
+
+            <h3>OPTIONS</h3>
+
+            <div id="optionsContainer"></div>
+
+            <button id="addOptionBtn" class="add-option">
+                Add another option
+            </button>
+
+        </div>
+
+        <div class="preview-section">
+
+            <h3>PREVIEW</h3>
+
+            <div id="variantsContainer">
+                <p class="empty-message">
+                    Add options and values to generate variants.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

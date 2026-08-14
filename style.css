@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f0ff;
+    color: #222;
+}
+
+.container {
+    width: 75%;
+    max-width: 950px;
+    margin: 45px auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.top-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #ddd;
+    background: #faf9ff;
+}
+
+h2 {
+    margin: 0 0 25px 0;
+    font-size: 22px;
+    color: #5b3cc4;
+}
+
+h3 {
+    font-size: 12px;
+    margin: 0 0 25px 0;
+    color: #5b3cc4;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.checkbox-row input {
+    width: 18px;
+    height: 18px;
+    accent-color: #6c4dd9;
+}
+
+.options-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.option-card {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #faf9ff;
+    border: 1px solid #e2ddf5;
+    border-radius: 7px;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.option-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4b349c;
+}
+
+.remove-option {
+    border: none;
+    background: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-option:hover {
+    color: #d33;
+}
+
+.option-name {
+    width: 28%;
+    min-width: 170px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.option-name:focus {
+    outline: none;
+    border-color: #6c4dd9;
+}
+
+.values-box {
+    width: 68%;
+    min-height: 45px;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 7px;
+    margin-left: 3%;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+.values-box:focus-within {
+    border-color: #6c4dd9;
+}
+
+.value-chip {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #e7e0ff;
+    color: #4b349c;
+    padding: 6px 9px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.remove-value {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+    color: #6c4dd9;
+}
+
+.remove-value:hover {
+    color: #d33;
+}
+
+.value-input {
+    border: none;
+    outline: none;
+    min-width: 150px;
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.add-option {
+    padding: 10px 16px;
+    background: #6c4dd9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-option:hover {
+    background: #5639b8;
+}
+
+.preview-section {
+    padding: 25px 0;
+}
+
+.preview-section h3 {
+    padding: 0 30px;
+}
+
+.variant-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.variant-table th {
+    text-align: left;
+    padding: 15px 18px;
+    background: #f3f0ff;
+    color: #4b349c;
+    border-bottom: 1px solid #ddd;
+}
+
+.variant-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.variant-table input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.variant-table input:focus {
+    outline: none;
+    border-color: #6c4dd9;
+}
+
+.variant-table .price {
+    min-width: 100px;
+}
+
+.variant-table .quantity {
+    min-width: 70px;
+}
+
+.delete-variant {
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.delete-variant:hover {
+    background: #ffecec;
+    color: #d33;
+}
+
+.empty-message {
+    padding: 0 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .option-name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .values-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .variant-table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .variant-table th,
+    .variant-table td {
+        padding: 8px;
+    }
+}
